@@ -1,0 +1,11 @@
+.Card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--veryPaleOrange);
+  box-sizing: border-box;
+  min-width: 100px;
+  max-width: 345px;
+  width: 100%;
+  min-height: 100px;
+  border-radius: 15px;
+}
