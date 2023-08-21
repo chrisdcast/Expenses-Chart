@@ -1,6 +1,6 @@
 import ExpenseGraphCard from './components/ExpenseGraphCard';
 import BalanceSummaryCard from './components/BalanceSummaryCard';
-import ExpenseSummary from './components/ExpenseSummary';
+import Footer from './components/partials/Footer';
 import GraphData from './components/Graph/GraphData';
 import data from './data/data.json';
 
@@ -17,8 +17,11 @@ function App() {
 
   return (
     <>
-      <BalanceSummaryCard balance={921.48}/>
-      <ExpenseGraphCard data={assembledData} />
+      <div className="activeArea">
+        <BalanceSummaryCard balance={921.48}/>
+        <ExpenseGraphCard data={assembledData} />
+      </div>
+      <Footer />
     </>
   )
 }
