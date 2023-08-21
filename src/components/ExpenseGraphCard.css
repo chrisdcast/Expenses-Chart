@@ -1,0 +1,55 @@
+.ExpenseGraphCard {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.ExpenseSummary {
+    display: flex;
+    margin-top: 15px;
+    padding: 25px 0px 0px 0px;
+    border-top: 2px solid rgba(0, 0, 0, 0.15);
+}
+
+.ExpenseTotalElementContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+
+    & h1 {
+        margin: 0px;
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--mediumBrown);
+    }
+
+    & p {
+        margin: 0px;
+        font-size: 32px;
+        font-weight: 700;
+        color: var(--darkBrown);
+    }
+}
+
+.ExpenseDifferenceElementContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    flex-grow: 1;
+    text-align: right;
+    vertical-align: bottom;
+
+    & h1 {
+        margin: 0px;
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--mediumBrown);
+    }
+
+    & p {
+        margin: 0px;
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--darkBrown);
+    }
+}

@@ -1,0 +1,69 @@
+.BarGraphColumn {
+    flex-grow: 1;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    box-sizing: border-box;
+    /* max-width: 40px; */
+    cursor: pointer;
+
+    text-align: center;
+
+    & p {
+        visibility: hidden;
+        user-select: none;
+        border-radius: 3px;
+        margin: 0px 0px 5px 0px;
+        padding: 5px;
+        background-color: var(--darkBrown);
+        font-size: 10px;
+    }
+
+    & h2 {
+        margin: 10px 0px;
+        user-select: none;
+        max-height: 50px;
+        font-size: 11px;
+        color: var(--mediumBrown);
+    }
+
+    /* border: 1px solid green; */
+}
+
+.Bar {
+    height: 100%;
+    width: 70%;
+    user-select: none;
+    overflow: hidden;
+
+
+    border-radius: 4px;
+
+    background-color: var(--cyan);
+}
+
+.BarGraphColumn:hover {
+    & p {
+        visibility: visible;
+    }
+
+    .Bar::before {
+        content: '';
+        position: relative;
+        display: block;
+        background-color: white;
+        opacity: .3;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 576px) {
+    .BarGraphColumn {
+        & p {
+            font-size: 12px;
+        }
+    }
+}
